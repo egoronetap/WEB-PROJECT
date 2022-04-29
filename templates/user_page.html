@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <h1 style="text-align: center">Личная страница {{ current_user.nick }}</h1>
+    <h2 >{{ current_user.nick }}</h2>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4">
+        <div>
+            {% if current_user.img_way %}
+                <img src="static/img/{{ current_user.img_way }}" class="img-thumbnail" alt="Фото пользователя">
+            {% else %}
+                <img src="static/img/placeholder.png" class="img-thumbnail img-fluid" alt="Фото пользователя">
+            {% endif %}
+        </div>
+        <div>
+              Имя
+            <h1 class="border-bottom">  {{ current_user.name }}</h1>
+              Фамилия
+            <h1 class="border-bottom">  {{ current_user.surname }}</h1>
+            Описание
+            {% if current_user.description%}
+                <h1 class="border-bottom">  {{ current_user.description }}</h1>
+            {% else %}
+                <h1>Пользователь решил не рассказывать о себе</h1>
+            {% endif %}
+        </div>
+    </div>
+    <a href="/logout"><button class="btn btn-danger" type="submit">Выйти</button></a>
+</div>
+{% endblock %}

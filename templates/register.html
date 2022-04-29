@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <h1>Регистрация</h1>
+    <p style="color:red">{{ message }}</p>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td style="color:red">*</td>
+                <td>Имя</td>
+            </tr>
+        </table>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Введите ваше имя"><br>
+        <table>
+            <tr>
+                <td style="color:red">*</td>
+                <td>Фамилия</td>
+            </tr>
+        </table>
+        <input type="text" class="form-control" name="surname" id="surname" placeholder="Введите вашу фамилию"><br>
+        <table>
+            <tr>
+                <td style="color:red">*</td>
+                <td>Псевдоним</td>
+            </tr>
+        </table>
+        <input type="text" class="form-control" name="nick" id="nick" placeholder="Введите ваше имя"><br>
+        Описание
+        <input type="text" class="form-control" name="description" id="description" placeholder="Расскажите немного о себе"><br>
+        <table>
+            <tr>
+                <td style="color:red">*</td>
+                <td>Почта</td>
+            </tr>
+        </table>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Введите вашу почту"><br>
+        <table>
+            <tr>
+                <td style="color:red">*</td>
+                <td>Пароль</td>
+            </tr>
+        </table>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль"><br>
+        <table>
+            <tr>
+                <td style="color:red">*</td>
+                <td>Подтверждение пароля</td>
+            </tr>
+        </table>
+        <input type="password" class="form-control" name="second_password" id="second_password" placeholder="Введите пароль еще раз"><br>
+        Фото для аватара
+        <input type="file" class="form-control" name="img_way" id="img_way"><br>
+        <p></p>
+        <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+{% endblock %}

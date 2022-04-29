@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<main>
+  <form action="" method="post" enctype="multipart/form-data">
+    Хотите добавить фотографию? Отправьте ее на проверку
+    <p>
+      <input type="file" class="form-control" name="img_way" id="img_way">
+    </p>
+    <p style="text-align: center">
+      <button class="btn btn-primary" type="submit">Отправить</button>
+      {{ message }}
+    </p>
+  </form>
+    {% if lst %}
+      {% for i in lst %}
+        <p style="text-align: center">
+          <img src="static/img/{{ i }}" class="img-fluid" alt="Фотография не прогрузилась">
+        </p>
+      {% endfor %}
+    {% endif %}
+  </main>
+{% endblock %}

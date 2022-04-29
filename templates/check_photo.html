@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <h1 style="text-align: center">Проверка фото</h1>
+    {% if lst %}
+        <div style="margin-left: auto; margin-right: auto">
+            <p style="text-align: center">
+                <img class="img-fluid" src="static/img/{{ lst[0] }}">
+            </p>
+        </div>
+    {% endif %}
+    <form action="" method="post">
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit" name="add_photo" value="Add">Добавить в альбом</button>
+            <button class="btn btn-danger" type="submit" name="delete_photo" value="Delete">Удалить</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

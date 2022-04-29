@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<iframe frameborder="0" style="overflow: hidden; border: 0; width: 740px; height: 51px;" src="//yandex.st/rasp/media/apicc/copyright_horiz_yellow.html"></iframe>
+<h1>Из Москвы: {{ dct_to[0]['from']['title'] }} (ближайший рейс)</h1>
+<h3>Время отправления: {{ dct_to[0]['departure'] }}</h3>
+<h3>Время прибытия: {{ dct_to[0]['arrival'] }}</h3>
+<h1>В Москву: {{ dct_from[0]['from']['title'] }} (ближайший рейс)</h1>
+<h3>Время отправления: {{ dct_from[0]['departure'] }}</h3>
+<h3>Время прибытия: {{ dct_from[0]['arrival'] }}</h3>
+{% endblock %}

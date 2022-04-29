@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<main>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center row justify-content-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Альбом</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Самые главное</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Здесь сохранены</li>
+              <li>все самые интересные</li>
+              <li>и запоминающиеся моменты</li>
+              <li>дачной жизни</li>
+            </ul>
+            <a href="/album"><button type="button" class="w-100 btn btn-lg btn-primary">Перейти</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Карты</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Что же ближе?</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Заблудились или ищите</li>
+              <li>определенное место?</li>
+              <li>Откройте карту и</li>
+              <li>выберите нужное место</li>
+            </ul>
+            <a href="/map"><button type="button" class="w-100 btn btn-lg btn-primary">Перейти</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Форум</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">На сегодня...</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Посмотрите новости,</li>
+              <li>которые опубликовали</li>
+              <li>другие пользователи или</li>
+              <li>опубликуйте новость сами</li>
+            </ul>
+            <a href="/forum"><button type="button" class="w-100 btn btn-lg btn-primary">Перейти</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Расписание</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Ну скоро там?</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Ознакомьтесь с расписаниен</li>
+              <li>ближайших электричек</li>
+              <li>P.S. говорят, он до</li>
+              <li>сих пор сидит и ждет</li>
+            </ul>
+            <a href="/timetable"><button type="button" class="w-100 btn btn-lg btn-primary">Перейти</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+{% endblock %}

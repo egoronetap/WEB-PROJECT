@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <h1>Добавление нового бравлера</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Введите имя бравлера"><br>
+        <input type="text" class="form-control" name="surname" id="surname" placeholder="Введите фамилию бравлера"><br>
+        <input type="text" class="form-control" name="description" id="description" placeholder="Введите описание бравлера"><br>
+        <input type="file" class="form-control" name="img_way" id="img_way"><br>
+        <button class="btn btn-primary" type="submit">Добавить бравлера</button>
+    </form>
+</div>
+{% endblock %}
